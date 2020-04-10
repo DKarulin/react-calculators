@@ -6,7 +6,7 @@ import {Buttons} from "./Button/Button";
 const Content = (props) => {
 
     return (
-        <div className={'container cont'} style={classes.cont}>
+        <div className={'container'} style={classes.cont}>
             <div>
                 <div className="input mb-3 cont">
                     <input type="text" className="form-control" value={props.dataState} aria-label="Username"

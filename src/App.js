@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import Content from "./components/Content/Content";
 import ContentContainer from "./components/Content/ContentContainer";
+import {Route} from "react-router-dom";
+import CurrencyContainer from "./components/Currency/CurrencyContainer";
 
 class App extends React.Component {
     render() {
@@ -12,7 +13,8 @@ class App extends React.Component {
                     <Navbar/>
                 </div>
                 <div className={'app-wrapper-content'}>
-                      <ContentContainer/>
+                    <Route exact path='/' render={() => <ContentContainer/>}/>
+                    <Route path='/currency' render={() => <CurrencyContainer/>}/>
                 </div>
 
             </div>
