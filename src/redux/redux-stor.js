@@ -5,8 +5,6 @@ import thunk from "redux-thunk";
 import {currencyReducer} from "./reducers/currencyReducers";
 
 const rootReducer = combineReducers({
-    page: pageReducer,
-    user: userReducer,
     currency: currencyReducer,
 })
 
