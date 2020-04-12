@@ -33,9 +33,6 @@ const ContentCurrency = (props)=>{
                             <textarea className="form-control mt-3" value={props.convertTextAreaVal} maxLength={10}  style={{ width: '100%', height:'100px', resize: 'none'}}/>
                         </div>
                     }
-
-                    <div><h6>TEXT</h6>{props.TextAreaVal} </div>
-
                 </div>
             </div>
     )
