@@ -3,6 +3,8 @@ const SET_VALUE_BUY = 'SET_VALUE_BUY'
 const SET_TEXT_AREA_VAL = 'SET_TEXT_AREA_VAL'
 const SET_CONVERT_TEAXTAREA_VAL = 'SET_CONVERT_TEAXTAREA_VAL'
 const SET_DATA_VAL = 'SET_DATA_VAL'
+const FLAG_NUMBER_TRUE = 'FLAG_NUMBER_TRUE'
+const FLAG_NUMBER_FALSE = 'FLAG_NUMBER_FALSE'
 
 
 const initialState = {
@@ -16,6 +18,7 @@ const initialState = {
     convertTextAreaVal: '',
     valueUSD: {},
     valueEUR: {},
+    isNumber: 0,
 
 }
 
@@ -43,6 +46,16 @@ export const currencyReducer = (state = initialState, action) => {
             return {
                 ...state,
                 convertTextAreaVal: action.payload,
+            }
+        case FLAG_NUMBER_TRUE:
+            return {
+                ...state,
+                isNumber: true
+            }
+        case FLAG_NUMBER_FALSE:
+            return {
+                ...state,
+                isNumber: false
             }
         case SET_DATA_VAL:
             return {
@@ -83,6 +96,18 @@ export const setConvertTextAreaVal = (convertTextAreaVal) => {
     return {
         type: SET_CONVERT_TEAXTAREA_VAL,
         payload: convertTextAreaVal
+    }
+}
+export const flagNumber = (val = 0) => {
+    if (val === 1) {
+        return {
+            type: FLAG_NUMBER_TRUE
+        }
+    } else {
+        return {
+            type: FLAG_NUMBER_FALSE
+
+        }
     }
 }
 export const setDataVal = (valueUSD, valueEUR) => {

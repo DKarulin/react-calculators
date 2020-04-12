@@ -9,8 +9,9 @@ const Navbar = (props) => {
         <div>
             <nav className="navbar navbar-light bg-light">
                 <div>
-                    <NavLink to='/' className="navbar-brand">CalculatorDK</NavLink>
-                    <NavLink to='/currency' className={`navbar-brand`} style={{}} >CurrencyDK</NavLink>
+                    <NavLink to='/' className="navbar-brand">Calculator</NavLink>
+                    <NavLink to='/currency' className={`navbar-brand`} style={{}} >
+                        CurrencyConverter</NavLink>
                 </div>
             </nav>
         </div>

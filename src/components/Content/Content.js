@@ -15,7 +15,7 @@ const Content = (props) => {
                 <Buttons btn={props.btn} num1={1} num2={2} num3={3} num4={'+'}/>
                 <Buttons btn={props.btn} num1={4} num2={5} num3={6} num4={'-'}/>
                 <Buttons btn={props.btn} num1={7} num2={8} num3={9} num4={'*'}/>
-                <Buttons btn={props.btn} num1={','} num2={0} num3={'C'} num4={'/'} cleanInput={props.cleanInput} num5={props.sumNumbers}/>
+                <Buttons btn={props.btn} num1={'.'} num2={0} num3={'C'} num4={'/'} cleanInput={props.cleanInput} num5={props.sumNumbers}/>
 
 
             </div>

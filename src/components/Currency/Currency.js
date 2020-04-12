@@ -65,6 +65,14 @@ const Currency = (props) => {
                                  convertTextAreaVal={props.choiceVal.convertTextAreaVal}/>
             </div>
             <div className='row mt-3'>
+               { props.choiceVal.isNumber ? <div className='col-sm-12'>
+                    <div className="alert alert-info" role="alert">
+                        <h4>Вводите только <kbd>цифры</kbd> или <kbd>.</kbd> после цифры</h4>
+                        <footer className="blockquote-footer">Пример <cite>3.1415</cite></footer>
+
+                    </div>
+                </div>:<div></div>
+               }
                 <div className='col-sm-6'>
                     <div className='row'>
                         <div className='col-sm-4'>
