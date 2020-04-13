@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import {flagNumber, setCurrency, setTextAreaVal} from "../../../redux/reducers/currencyReducers";
+import classes from './ContentCurrency.modules.css'
 
 const ContentCurrency = (props) => {
     const outputScreenVal = (e, val = props.name) => {
@@ -38,8 +39,8 @@ const ContentCurrency = (props) => {
                             выбрали {props.choiceVal}</div> : <div></div>
                 }
                 {
-                    props.name === 1 ? <div className='col-sm-12'>
-                        <input className="form-control mt-3" onChange={textAreaVal} maxLength={10} style={{
+                    props.name === 1 ? <div className='col-sm-12 textareaClass'>
+                        <input className={`form-control mt-3 ${classes.inInput}`} onChange={textAreaVal} maxLength={10}style={{
                             width: '100%',
                             height: '100px',
                             resize: 'none',

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import ContentContainer from "./components/Content/ContentContainer";
+import ContentContainer from "./components/Сalculator/ContentContainer";
 import {Route} from "react-router-dom";
 import CurrencyContainer from "./components/Currency/CurrencyContainer";
 
