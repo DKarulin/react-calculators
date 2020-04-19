@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ContentContainer from "./components/Сalculator/ContentContainer";
 import {Route} from "react-router-dom";
 import CurrencyContainer from "./components/Currency/CurrencyContainer";
+import CurrencyList from "./components/ListOfCurrencies/CurrencyList";
 
 class App extends React.Component {
     render() {
@@ -15,10 +16,9 @@ class App extends React.Component {
                 <div className={'app-wrapper-content'}>
                     <Route exact path='/' render={() => <ContentContainer/>}/>
                     <Route path='/currency' render={() => <CurrencyContainer/>}/>
+                    <Route path='/currencylist' render={()=><CurrencyList/>}/>
                 </div>
-
             </div>
-
         )
     }
 

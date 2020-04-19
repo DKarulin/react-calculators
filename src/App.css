@@ -1,10 +1,7 @@
 .app-wrapper {
     height: 100vh;
     background-color: gray;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
 
 
     display: grid;
